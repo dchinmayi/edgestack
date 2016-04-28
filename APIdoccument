@@ -1,0 +1,33 @@
+1)create containers
+
+image (str): The image to run
+command (str or list): The command to be run in the container
+hostname (str): Optional hostname for the container
+user (str or int): Username or UID
+detach (bool): Detached mode: run container in the background and print new container Id
+stdin_open (bool): Keep STDIN open even if not attached
+tty (bool): Allocate a pseudo-TTY
+mem_limit (float or str): Memory limit (format: [number][optional unit], where unit = b, k, m, or g)
+ports (list of ints): A list of port numbers
+environment (dict or list): A dictionary or a list of strings in the following format ["PASSWORD=xxx"] or {"PASSWORD": "xxx"}.
+dns (list): DNS name servers
+volumes (str or list):
+volumes_from (str or list): List of container names or Ids to get volumes from. Optionally a single string joining container id's with commas
+network_disabled (bool): Disable networking
+name (str): A name for the container
+entrypoint (str or list): An entrypoint
+cpu_shares (int): CPU shares (relative weight)
+working_dir (str): Path to the working directory
+domainname (str or list): Set custom DNS search domains
+memswap_limit (int):
+host_config (dict): A HostConfig dictionary
+mac_address (str): The Mac Address to assign the container
+labels (dict or list): A dictionary of name-value labels (e.g. {"label1": "value1", "label2": "value2"}) or a list of names of labels to set with empty values (e.g. ["label1", "label2"])
+volume_driver (str): The name of a volume driver/plugin.
+stop_signal (str): The stop signal to use to stop the container (e.g. SIGINT).
+
+API format:
+eg <IP:port>/run?image=<image>&command=<cmd>&user=<userName>
+
+
+2)
